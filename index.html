@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fatbee Cafe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Fatbee Cafe</h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="https://fatbeecafe.square.site" target="_blank">Order Online</a></li>
+        <li><a href="#admin">Admin</a></li>
+        <li><a href="https://www.instagram.com/fatbeecafe.millcreek" target="_blank">Instagram</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Fatbee Cafe!</h2>
+    <p>Your spot for the best boba, coffee, and specialty drinks in Everett.</p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Drinks</h2>
+    <div id="drinkList" class="drink-list">
+      <!-- Drinks will be inserted here -->
+    </div>
+  </section>
+
+  <section id="admin" class="admin">
+    <h2>Admin Panel</h2>
+    <input type="password" id="adminPass" placeholder="Enter password" />
+    <div id="adminPanel" style="display: none;">
+      <h3>Add New Drink</h3>
+      <input id="drinkName" placeholder="Drink Name" />
+      <input id="drinkIngredients" placeholder="Ingredients" />
+      <input id="drinkPrice" placeholder="Price" />
+      <input id="drinkImage" placeholder="Image URL" />
+      <button onclick="addDrink()">Add Drink</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
